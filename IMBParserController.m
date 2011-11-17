@@ -595,14 +595,14 @@ static NSMutableDictionary* sRegisteredParserClasses = nil;
 
 #endif
 
-- (IMBParser *) parserOfClass:(Class)class forMediaType:(NSString *)aMediaType;
+- (IMBParser *) parserOfClass:(Class)inClass forMediaType:(NSString *)inMediaType
 {
-    NSParameterAssert(class);
+    NSParameterAssert(inClass);
     
-    NSArray *parsers = [[self parsersByMediaType] objectForKey:aMediaType];
+    NSArray *parsers = [[self parsersByMediaType] objectForKey:inMediaType];
     for (IMBParser* parser in parsers)
     {
-        if ([parser isMemberOfClass:class])
+        if ([parser isMemberOfClass:inClass])
         {
             return parser;
         }
