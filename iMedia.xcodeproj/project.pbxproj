@@ -42,6 +42,8 @@
 		30F90B341358501A00D13233 /* IMBFaceObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F90B321358501A00D13233 /* IMBFaceObjectViewController.m */; };
 		30F90B391358521300D13233 /* IMBTestFaceBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F90B361358521300D13233 /* IMBTestFaceBrowserCell.m */; };
 		30F90B3A1358521300D13233 /* IMBTestFacesBackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F90B381358521300D13233 /* IMBTestFacesBackgroundLayer.m */; };
+		658E3DB114994C1300B9BE8D /* IMBPreferencesCopyAppValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 658E3DAF14994C1300B9BE8D /* IMBPreferencesCopyAppValue.h */; };
+		658E3DB214994C1300B9BE8D /* IMBPreferencesCopyAppValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 658E3DB014994C1300B9BE8D /* IMBPreferencesCopyAppValue.m */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 		8F47B39110C416050013ED25 /* IMBOrderedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F47B38F10C416050013ED25 /* IMBOrderedDictionary.h */; };
 		8F47B39210C416050013ED25 /* IMBOrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F47B39010C416050013ED25 /* IMBOrderedDictionary.m */; };
@@ -422,6 +424,8 @@
 		30F90B381358521300D13233 /* IMBTestFacesBackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMBTestFacesBackgroundLayer.m; sourceTree = "<group>"; };
 		32DBCF5E0370ADEE00C91783 /* iMedia.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iMedia.pch; sourceTree = "<group>"; };
 		651C294A149932A000ABF92D /* iMedia2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = iMedia2.entitlements; sourceTree = "<group>"; };
+		658E3DAF14994C1300B9BE8D /* IMBPreferencesCopyAppValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMBPreferencesCopyAppValue.h; sourceTree = "<group>"; };
+		658E3DB014994C1300B9BE8D /* IMBPreferencesCopyAppValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMBPreferencesCopyAppValue.m; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* iMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F47B38F10C416050013ED25 /* IMBOrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMBOrderedDictionary.h; sourceTree = "<group>"; };
@@ -832,6 +836,8 @@
 		08FB77AEFE84172EC02AAC07 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				658E3DAF14994C1300B9BE8D /* IMBPreferencesCopyAppValue.h */,
+				658E3DB014994C1300B9BE8D /* IMBPreferencesCopyAppValue.m */,
 				D0B87F21103D998D00C48C6F /* iMedia.h */,
 				8DC2EF5A0486A6940098B216 /* Info.plist */,
 				D02CD4CB1224F78E00C773A2 /* Localizable.strings */,
@@ -1504,6 +1510,7 @@
 				30F90B2F13584FE700D13233 /* IMBAppleMediaParser.h in Headers */,
 				30F90B331358501A00D13233 /* IMBFaceObjectViewController.h in Headers */,
 				8F7945CE139518CD0066E133 /* IMBiPhotoObjectPromise.h in Headers */,
+				658E3DB114994C1300B9BE8D /* IMBPreferencesCopyAppValue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1845,6 +1852,7 @@
 				30F90B3013584FE700D13233 /* IMBAppleMediaParser.m in Sources */,
 				30F90B341358501A00D13233 /* IMBFaceObjectViewController.m in Sources */,
 				8F7945CF139518CD0066E133 /* IMBiPhotoObjectPromise.m in Sources */,
+				658E3DB214994C1300B9BE8D /* IMBPreferencesCopyAppValue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
