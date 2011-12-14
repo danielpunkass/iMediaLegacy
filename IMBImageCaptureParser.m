@@ -197,7 +197,7 @@
 	  
 // copy a given node
 
-- (IMBNode *) nodeCopy:(const IMBNode*)inOldNode
+- (IMBNode *) copyNode:(const IMBNode*)inOldNode
 {		
 	IMBNode* newNode = [[IMBNode alloc] init];
 	
@@ -269,7 +269,7 @@
 	
 	if( inOldNode )
 	{
-		newNode = [[self nodeCopy:inOldNode] autorelease];
+		newNode = [[self copyNode:inOldNode] autorelease];
 		// already done in copyNode:
 		// if ( [inOldNode.subNodes count] || [inOldNode.objects count]  )
 		// { 	// If the old node had subnodes, then look for subnodes in the new node...
@@ -684,8 +684,8 @@ static void ICANotificationCallback(CFStringRef notificationType, CFDictionaryRe
 	}
 	
 	if( !objectID && 
-	    [aNotification isEqualTo:(NSString *)kICANotificationTypeStoreAdded] || 
-	    [aNotification isEqualTo:(NSString *)kICANotificationTypeStoreRemoved] )
+	    ([aNotification isEqualTo:(NSString *)kICANotificationTypeStoreAdded] || 
+	    [aNotification isEqualTo:(NSString *)kICANotificationTypeStoreRemoved]))
 	{ 
 		// Reload the device
 		// TODO: test with devices with two card slots
