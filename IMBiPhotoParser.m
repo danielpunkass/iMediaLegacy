@@ -140,7 +140,6 @@
 	{
 		CFArrayRef recentLibraries = CFPreferencesCopyAppValue((CFStringRef)@"iPhotoRecentDatabases",(CFStringRef)@"com.apple.iApps");
 		NSArray* libraries = (NSArray*)recentLibraries;
-		
 		for (NSString* library in libraries)
 		{
 			NSURL* url = [NSURL URLWithString:library];

@@ -421,6 +421,7 @@
 		30F90B371358521300D13233 /* IMBTestFacesBackgroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMBTestFacesBackgroundLayer.h; sourceTree = "<group>"; };
 		30F90B381358521300D13233 /* IMBTestFacesBackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMBTestFacesBackgroundLayer.m; sourceTree = "<group>"; };
 		32DBCF5E0370ADEE00C91783 /* iMedia.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iMedia.pch; sourceTree = "<group>"; };
+		651C294A149932A000ABF92D /* iMedia2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = iMedia2.entitlements; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* iMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F47B38F10C416050013ED25 /* IMBOrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMBOrderedDictionary.h; sourceTree = "<group>"; };
@@ -805,6 +806,7 @@
 		0867D691FE84028FC02AAC07 /* iMedia */ = {
 			isa = PBXGroup;
 			children = (
+				651C294A149932A000ABF92D /* iMedia2.entitlements */,
 				D0760AC210C5027100F2119C /* IMBProject.xcconfig */,
 				D0CF005310C50908009EC68F /* IMBTargetDebug.xcconfig */,
 				D0CF005410C50908009EC68F /* IMBTargetRelease.xcconfig */,
@@ -1983,6 +1985,8 @@
 		65A60D181123BD1A003B1688 /* Release10.6+ */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = iMedia2.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				INFOPLIST_FILE = "TestApp-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
@@ -2050,6 +2054,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0CF005310C50908009EC68F /* IMBTargetDebug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = iMedia2.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				GCC_ENABLE_OBJC_GC = unsupported;
 				INFOPLIST_FILE = "TestApp-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -2067,6 +2073,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0CF005410C50908009EC68F /* IMBTargetRelease.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = iMedia2.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				INFOPLIST_FILE = "TestApp-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
@@ -2083,6 +2091,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0CF005510C50908009EC68F /* IMBTargetTest.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = iMedia2.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				INFOPLIST_FILE = "TestApp-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (

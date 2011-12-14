@@ -45,6 +45,15 @@
 
 #import <Cocoa/Cocoa.h>
 #include <sys/resource.h>
+#include <sys/types.h>
+#include <pwd.h>
+
+NSString* IMBActualHomeDirectory()
+{
+	struct passwd* passInfo = getpwuid(getuid());
+	char* homeDir = passInfo->pw_dir;
+	return [NSString stringWithUTF8String:homeDir];
+}
 
 int main(int argc, char *argv[])
 {
@@ -56,6 +65,8 @@ int main(int argc, char *argv[])
 		limit.rlim_cur = NEW_MAX;
 		setrlimit(RLIMIT_NOFILE,&limit);
 	}
+	
+	NSLog(@"Got home dir %@", IMBActualHomeDirectory());
 	
     return NSApplicationMain(argc,  (const char **) argv);
 }
